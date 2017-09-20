@@ -9,24 +9,32 @@
 
      
 <style>
-body {
+
+.bodyStyle {
 margin:20px;
 padding:10px;
+background-color:DeepSkyBlue;
 }
-.li1 {
-border-radius:25px;
-
-}
-#services {
+.servStyle{
 margin-top:2%;
 }
-h3 {
+.h3Style {
 padding-bottom:3%;
+color:royalblue;
+color:darkslategray;
 }
 p:hover{
- text-decoration:underline;}
-</style>
-     
+ text-decoration:underline;
+ }
+button:hover{
+ cursor:pointer;
+}
+.pro a{
+ color:gold;
+}
+
+ </style>
+
 </head>
 
 
@@ -83,7 +91,7 @@ p:hover{
 <div class="row"><!--fourth row-->
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-<h3 class="text-center">
+<h3 class="text-center wavy">
 <strong>About</strong>
 </h3>
 <p><em>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
@@ -105,7 +113,7 @@ lorem ipsum lorem ipsum </em></p>
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
-<h3 class="text-center">
+<h3 class="text-centern wavy">
 </strong>Services</strong>
 </h3>
 <img class="img-responsive img-rounded" src="https://cdn.pixabay.com/photo/2013/07/13/09/38/ninja-155848_960_720.png" alt="services image"/>
@@ -132,7 +140,7 @@ lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 
 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 
-<h3 class="text-center"><strong>Contact</strong></h3>
+<h3 class="text-center wavy"><strong>Contact</strong></h3>
 <form action="#home"class="form-group">
 <label for="name">Name:<input type="text" class="form-control"></label>
 <br>
@@ -140,7 +148,7 @@ lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 <br>
 <label for="message">Message:<input type="text" class="form-control"></label>
 <br>
-<button type="btn btn-primary">Submit</button>
+<button class="btn btn-primary">Submit</button>
 
 </form>
 </div>
@@ -148,7 +156,7 @@ lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-<h3><strong>Social</strong></h3>
+<h3 class="wavy"><strong>Social</strong></h3>
 <button class="btn"><a href="#">Twitter</a></button>
 <button class="btn"><a href="#">G+</a></button>
 <button class="btn"><a href="#">Linkedin</a></button>
@@ -164,7 +172,7 @@ lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><p>
 Created by <strong>Vasiliki Loukoumi</strong>
-<button class="btn"><a href="https://gr.linkedin.com/in/vasiliki-loukoumi-41426492">profile</a></button>
+<button class="btn btn-default pro"><a href="https://gr.linkedin.com/in/vasiliki-loukoumi-41426492">profile</a></button>
 </p></div>
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
 </div>
@@ -174,15 +182,22 @@ Created by <strong>Vasiliki Loukoumi</strong>
 <script> 
 $(document).ready(function(){
 $(".im1").addClass("animated bounce");
-$(".li1").css("background-color","orange");
-$("body").css("background-color","purple");
-$("h3").css("color", "#46468E");
-$("p").css("color", "#46468E");
-$("h2").css("color", "#46468E");
+$(".li1").css("background-color","DeepPink");
+$(".li1 a").css("color","MintCream");
+$("body").addClass("bodyStyle");
+$("#services").addClass("servStyle");
+$("h3").addClass("h3Style");
+$(".wavy").css({"color":"MidnightBlue", "text-decoration":"underline", "text-decoration-style":"wavy",
+"text-decoration-color":"DeepPink"});
+$("h2").css({"font-family":"Libre+Baskerville","color":"MintCream","background-color":"gold", "border-radius":"8px",
+"padding":"20px","text-align":"center"
+});
+$("p").css("color", "LightSlateGrey");
+$("nav").css("padding-bottom","20px");
 $( "#b" ).click(function() {
   $( "#b" ).addClass("animated hinge");
 });
-$("h2").css("font-family","Libre+Baskerville");
+
 });
 </script>
 
