@@ -9,19 +9,17 @@
 
      
 <style>
-
 .bodyStyle {
 margin:20px;
 padding:10px;
-background-color:DeepSkyBlue;
+background-color:#8C8484;
 }
 .servStyle{
 margin-top:2%;
 }
 .h3Style {
 padding-bottom:3%;
-color:royalblue;
-color:darkslategray;
+color:#8C8484;
 }
 p:hover{
  text-decoration:underline;
@@ -30,9 +28,15 @@ button:hover{
  cursor:pointer;
 }
 .pro a{
- color:gold;
+ color:#D6FF79;
 }
 
+p, a{
+text-align:justify;}
+
+#createdBy{
+color:#5F00BA;
+}
  </style>
 
 </head>
@@ -94,13 +98,12 @@ button:hover{
 <h3 class="text-center wavy">
 <strong>About</strong>
 </h3>
-<p><em>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-lorem ipsum lorem ipsum </em></p>
+<p id="aboutTxt">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+ lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+ ipsum lorem ipsum <strong><em>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+ lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</em></strong> lorem ipsum lorem
+ ipsum lorem ipsum 
+ </p>
 </div>
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
 </div>
@@ -172,7 +175,7 @@ lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><p>
 Created by <strong>Vasiliki Loukoumi</strong>
-<button class="btn btn-default pro"><a href="https://gr.linkedin.com/in/vasiliki-loukoumi-41426492">profile</a></button>
+<button class="btn btn-default pro"><a id="createdBy" href="https://gr.linkedin.com/in/vasiliki-loukoumi-41426492">profile</a></button>
 </p></div>
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
 </div>
@@ -182,17 +185,17 @@ Created by <strong>Vasiliki Loukoumi</strong>
 <script> 
 $(document).ready(function(){
 $(".im1").addClass("animated bounce");
-$(".li1").css("background-color","DeepPink");
+$(".li1").css("background-color","#8C8484");
 $(".li1 a").css("color","MintCream");
 $("body").addClass("bodyStyle");
 $("#services").addClass("servStyle");
 $("h3").addClass("h3Style");
-$(".wavy").css({"color":"MidnightBlue", "text-decoration":"underline", "text-decoration-style":"wavy",
-"text-decoration-color":"DeepPink"});
-$("h2").css({"font-family":"Libre+Baskerville","color":"MintCream","background-color":"gold", "border-radius":"8px",
+$(".wavy").css({"color":"#444643", "text-decoration":"underline", "text-decoration-style":"wavy",
+"text-decoration-color":"#D6FF79"});
+$("h2").css({"font-family":"Libre+Baskerville","color":"MintCream","background-color":"#D6FF79", "border-radius":"8px",
 "padding":"20px","text-align":"center"
 });
-$("p").css("color", "LightSlateGrey");
+$("p").css("color", "#A09BE7");
 $("nav").css("padding-bottom","20px");
 $( "#b" ).click(function() {
   $( "#b" ).addClass("animated hinge");
