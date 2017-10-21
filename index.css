@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+.bodyStyle {
+margin:20px;
+padding:10px;
+background-color:#8C8484;
+}
+.container .well{
+	background-color:white;
+}
+nav{
+	padding-bottom:20px;
+}
+.servStyle{
+margin-top:2%;
+}
+h3 {
+margin-bottom:25px;
+}
+
+p:hover{
+ text-decoration:underline;
+ }
+button:hover, a:hover{
+ cursor:pointer;
+}
+.pro a{
+
+}
+p, a, h2, h3{
+text-align:justify;
+font-family: 'Lora', serif;
+}
+
+.li1{
+	background-color:#8C8484;
+}
+
+.li1 a{
+	color:white;
+	font-size:20px;
+}
+
+.wavy{
+	text-decoration:underline;
+	text-decoration-style:wavy;
+	text-decoration-color:#aa9c9c;
+}
+
+h2{
+border-radius:8px;
+padding:20px;
+text-align:center;	
+background-color:dodgerblue;
+color:white
+}
+
+#ninja{
+	width:360px;
+	height:340px;
+	margin:0 auto;
+	display:block;
+}
+#ninja:hover {
+	 transform: scaleX(-1);
+	
+}
+
+.caption{
+	padding-top:40px;
+	display:inline-block;
+	
+}
+
+
+@media screen and (max-width: 960px){
+
+#ninja{
+width:80%;
+height:80%;
+}
+#myCanvas{
+	width:360px;
+	height:200px;
+}
+#socialMedia{
+position:absolute;
+right:2em;	
+}
+}
+@media screen and (max-width: 680px){
+#myCanvas{
+	width:200px;
+	height:200px;
+}
+h2, h3, caption, img{
+transform:scale(0.9,0.9);
+}
+}
+@media screen and (max-width: 380px){
+#socialMedia {
+position:absolute;
+right:-0.4em;	
+top:10em;
+}
+#socialMedia > h3{
+	opacity:0;
+}
+button, h2, h3{
+transform:scale(0.8,0.8);
+}
+#myCanvas{
+	width:120px;
+	height:200px;
+}
+}
