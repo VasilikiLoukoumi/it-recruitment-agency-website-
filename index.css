@@ -26,7 +26,7 @@ button:hover, a:hover{
 .pro a{
 
 }
-p, a, h2, h3{
+p, a, h2, h3, .caption{
 text-align:justify;
 font-family: 'Lora', serif;
 }
