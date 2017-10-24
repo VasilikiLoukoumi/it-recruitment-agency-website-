@@ -30,7 +30,7 @@ let draw = function(){
 	}
 if(dx<=1){
 	dx = 500;
-	dy = Math.floor(Math.random()*70);
+	dy = Math.floor(Math.random()*90);
 	}
 	}
 
